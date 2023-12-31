@@ -1,0 +1,45 @@
+.hover-effect {
+    /* styles for the div */
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .hover-effect:hover {
+    /* styles for the div on hover */
+    background-color: black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  .backgroundColor{
+    background-image: url("https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?cs=srgb&dl=pexels-johannes-plenio-1103970.jpg&fm=jpg");
+  }
+  .butProperty{
+    background-color: #0bc096;
+color: black;
+border: 1px solid #0bc096;
+width: 100%;
+
+  }
+  .butProperty:hover{
+    background-color: #04775c;
+  }
+  .overly{
+    text-decoration: none;
+    color: black;
+  }
+  .fixed-image-size {
+    width: 200px; /* Set a fixed width for the image */
+    height: 150px; /* Set a fixed height for the image */
+    object-fit: cover; /* Maintain the image's aspect ratio and cover the entire container */
+  }
+
+  .card-shadow {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  
+  .card-shadow:hover {
+    box-shadow: 0 0 12px rgba(77, 77, 77, 0.9);
+  }
+  
+  

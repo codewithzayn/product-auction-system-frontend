@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    background-color: #fff;
+  }
+  
+
+  
+
+  
+  .my-container {
+    transition: 0.4s;
+  }
+  
+  .active-nav {
+    margin-left: 0;
+  }
+  
+  /* for main section */
+  .active-cont {
+    margin-left: 180px;
+  }
+  
+ 
+  
+  
+  .my-container input {
+    border-radius: 2rem;
+    padding: 2px 20px;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    background-color: #fff;
+  }
+  
+  .side-navbar {
+    width: 180px;
+    height: 100%;
+    position: fixed;
+    margin-left: -300px;
+    background-color: #0bc096;
+    transition: 0.5s;
+  }
+  
+  #navbar_top{
+    background-color: #00cc9c;
+  }
+  .nav-link:active,
+  .nav-link:focus,
+  .nav-link:hover {
+    background-color: #00000088;
+    border-radius: 5px;
+  }
+  
+  .my-container {
+    transition: 0.4s;
+  }
+  
+  .active-nav {
+    margin-left: 0;
+  }
+  
+  /* for main section */
+  .active-cont {
+    margin-left: 180px;
+  }
+  
+  #menu-btn {
+    background-color: #000000;
+    color: #fff;
+    margin-left: -20px;
+    border: none;
+    
+    
+
+  }
+  .roundedButton{
+    background-color: black;
+    color: #fff;
+    margin-left: -20px;
+    border: none;
+    border-radius: 25px;
+  }
+  .roundedButton:hover{
+    background-color: #3a3939;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.7s ease;
+  }
+.round{
+  padding: 10px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+}
+.stretch{
+    height: 35px;
+}
+  
+  .my-container input {
+    border-radius: 2rem;
+    padding: 2px 20px;
+  }
+  .sidebarOption{
+    text-decoration: none;
+    decoration : none;
+    color: #fff;
+    
+  }
+  .sidebar-li:hover{
+    color: white; 
+    background-color: rgb(27, 25, 25);
+  }
+  a:hover{
+    color: aliceblue;
+  }
+  #sidebar{
+    width: 15% !important;
+  }
+  #inner-content{
+    margin-top: 1.5%;
+  }
+  .logOutLink{
+    color: white;
+    text-decoration: none;
+  }
+  #comp{
+    background-color: white;
+  }

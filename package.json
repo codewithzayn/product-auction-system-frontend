@@ -1,0 +1,55 @@
+{
+  "name": "bus-ticketing-service",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@stripe/react-stripe-js": "^2.1.0",
+    "@stripe/stripe-js": "^1.52.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.2.0",
+    "bootstrap-icons": "^1.10.3",
+    "chart.js": "^4.2.1",
+    "chartjs-adapter-date-fns": "^3.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "moment-timezone": "^0.5.43",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-chat-window": "^1.2.1",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.6.0",
+    "react-responsive-carousel": "^3.2.23",
+    "react-scripts": "^5.0.1",
+    "react-scroll-to-bottom": "^4.2.0",
+    "react-slick": "^0.29.0",
+    "react-slick-carousel": "^0.14.9",
+    "react-social-icons": "^5.15.0",
+    "react-stripe-checkout": "^2.6.3",
+    "react-toastify": "^9.1.1",
+    "stripe": "^12.4.0",
+    "swiper": "^9.3.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "react-router-dom": "^6.4.4"
+  }
+}

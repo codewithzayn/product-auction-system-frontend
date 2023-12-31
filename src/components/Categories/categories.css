@@ -1,0 +1,67 @@
+#menu-btn {
+    background-color: #000000;
+    color: #fff;
+    margin-left: -20px;
+  }
+
+  .anyClass {
+    height:500px;
+    /* width: 500px; */
+    overflow-y: scroll;
+  }
+
+  .buttons {
+    background-color: gray;
+    border-radius: 25px;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .buttons:hover {
+    background-color: #0bc096;
+  }
+  
+  .buttons:focus {
+    outline: none;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: gray;
+    border-radius: 25px;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 10px 20px;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #0bc096;
+    border-radius: 25px;
+
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:focus-within .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:focus-within .button {
+    background-color: #0bc096;
+  }

@@ -1,0 +1,25 @@
+.services_row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services_card {
+  width: 23%;
+  margin-bottom: 20px;
+}
+
+.services_icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.services_details h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.services_details p {
+  font-size: 1rem;
+  color: #444343;
+}
