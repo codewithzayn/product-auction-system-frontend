@@ -3,8 +3,9 @@ import { Line, Bar, Pie } from 'react-chartjs-2';
 import { Link } from "react-router-dom";
 import "./trend.css"
 import 'chartjs-adapter-date-fns';
-// import 'chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.min.js';
 import Chart from 'chart.js/auto';
+// import { Chart } from 'chart.js';
+
 import 'react-toastify/dist/ReactToastify.css';
 Chart.defaults.scale.linear = { type: 'linear', min: 0, max: 0, ticks: { stepSize: 1 } };
 
