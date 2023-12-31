@@ -53,7 +53,7 @@ code {
 }
 
 .back-img {
-	background-image: url("/src/images/back\ bus.jpg");    
+	background-image: url("/src/images/back\bus.jpg");    
 	/* /src/images/bus4.jpg */
 	background-size: cover;
 	height: 100vh;
