@@ -22,7 +22,6 @@ const Dash = () => {
 
   return (
     <div className="back-img">
-      {/* <Navbar /> */}
 
       <div className="content container d-flex justify-content-center ">
         <div className="rdc">
@@ -66,8 +65,7 @@ const Dash = () => {
                   <div>
                     <h5 style={{ "margin-left": "5%" }}>Date</h5>
 
-                    {/* <input className='selectpicker'  name="txtDate" id="txtDate" type="date"></input> */}
-                    {/* onDisable */}
+                
                     <input
                       type="date"
                       name="date"

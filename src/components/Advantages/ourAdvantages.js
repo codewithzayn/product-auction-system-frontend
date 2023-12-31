@@ -10,7 +10,6 @@ const Services = () => {
             <section id="services" className="section">
                 <div className="pt-5">
 
-                    {/* <SectionsHead heading="Our Advantages" /> */}
                     <div className="row wrapper services_wrapper" style={{ "background-color": "#0bc096" }}>
                         <div className="d-flex" style={{ display: "flex", margin: "auto", width: "80%" }}>
                             {

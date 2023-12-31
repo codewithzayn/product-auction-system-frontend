@@ -40,10 +40,8 @@ const Navbar = () => {
 										>
 											About Us
 										</a>
-										{/* <a style={{color:"black"}}  class="nav-link active" href="/Aboutus">About Us</a> */}
 									</li>
 									<li class="nav-item">
-										{/* <a style={{color:"black"}} class="nav-link active" href="#">Contact</a> */}
 										<a
 											to="/Contactus"
 											style={{ color: "white" }}

@@ -188,14 +188,7 @@ const Dashboards = () => {
             </li>
           </Link>
 
-          {/* <Link className="logOutLink" to="/payment">
-            <li href="#" class="nav-link mt-3 sidebar-li">
-              <i class="bx bx-conversation"></i>
-              <a className="sidebarOption" href="">
-                <span class="mx-2">Chat</span>
-              </a>
-            </li>
-          </Link> */}
+         
           <Link className="logOutLink" to="/contact">
             <li href="#" class="nav-link mt-3 sidebar-li">
               <i class="bx bx-file"></i>
@@ -242,7 +235,6 @@ const Dashboards = () => {
         </ul>
       </div>
 
-      {/* <!-- Main Wrapper --> */}
 
       <div class=" my-container" id="navbar_top">
         <nav class="navbar top-navbar navbar-light px-5 d-flex row" >
@@ -362,7 +354,6 @@ const Dashboards = () => {
                     <div className="col-6">
                       <Link to="/signup">
                         <button className="btn roundedButton">
-                          {/* <i class="bx bx-log-in"></i> */}
                           <i class='bx bx-log-in-circle'></i>
                           <a className="sidebarOption" href="" style={{ textDecoration: "none" }}>
                             <span class="mx-2">Register</span>
@@ -382,7 +373,6 @@ const Dashboards = () => {
           <Footer />
         </div>
 
-        {/* <Dashboard /> */}
       </div>
 
       <script

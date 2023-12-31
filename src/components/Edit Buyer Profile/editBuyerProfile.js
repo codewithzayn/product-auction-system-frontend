@@ -137,29 +137,18 @@ const EditBUyerProfile = () => {
                 </div>
                 <div class="row mt-3">
                   <div class="col-md-12"><label class="labels">Name</label><input type="text" class="form-control" placeholder="name" onChange={(e) => setName(e.target.value)} /></div>
-                  {/* <div class="col-md-6"><label class="labels">Last Name</label><input type="text" class="form-control" placeholder="last name" onChange={(e) => setLastName(e.target.value)}/></div> */}
                 </div>
                 <div class="row mt-3">
                   <div class="col-md-12"><label class="labels">Mobile Number</label><input type="text" class="form-control" placeholder="enter phone number" onChange={(e) => setMobile(e.target.value)} /></div>
-                  {/* <div class="col-md-12"><label class="labels">Address Line</label><input type="text" class="form-control" placeholder="enter address line 1" /></div> */}
-                  {/* <div class="col-md-12"><label class="labels">Address Line 2</label><input type="text" class="form-control" placeholder="enter address line 2" value=""/></div> */}
-                  {/* <div class="col-md-12"><label class="labels">Postcode</label><input type="text" class="form-control" placeholder="enter address line 2" value=""/></div> */}
-                  {/* <div class="col-md-12"><label class="labels">State</label><input type="text" class="form-control" placeholder="enter address line 2" value=""/></div> */}
                   <div class="col-md-12"><label class="labels">City</label><input type="text" class="form-control" placeholder="city" onChange={(e) => setCity(e.target.value)} /></div>
                   <div class="col-md-12"><label class="labels">Country</label><input type="text" class="form-control" placeholder="country" onChange={(e) => setCountry(e.target.value)} /></div>
                 </div>
-                {/* <div class="row mt-3">
-                            <div class="col-md-6"><label class="labels">Country</label><input type="text" class="form-control" placeholder="country" value=""/></div>
-                            <div class="col-md-6"><label class="labels">State/Region</label><input type="text" class="form-control" value="" placeholder="state"/></div>
-                        </div> */}
+             
                 <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button" style={buttonStyles} on onClick={submit}>Save Profile</button></div>
               </div>
             </div>
             <div class="col-md-4">
               <div class="p-3 py-5">
-                {/* <div class="d-flex justify-content-between align-items-center experience"><span>User Type</span><span class="border px-3 p-1 add-experience"><i class="fa fa-plus"></i>&nbsp;Seller</span></div><br/> */}
-                {/* <div class="col-md-12"><label class="labels">Experience in Designing</label><input type="text" class="form-control" placeholder="experience" value=""/></div> <br/> */}
-                {/* <div class="col-md-12"><label class="labels">User Information</label><input type="text" class="form-control" placeholder="User information " onChange={(e) => setDescription(e.target.value)}/></div> */}
               </div>
             </div>
           </div>

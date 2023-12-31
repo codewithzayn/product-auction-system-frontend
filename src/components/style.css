@@ -53,8 +53,6 @@ code {
 }
 
 .back-img {
-	background-image: url("/src/images/back\bus.jpg");    
-	/* /src/images/bus4.jpg */
 	background-size: cover;
 	height: 100vh;
 	margin-top: -4px;
@@ -87,11 +85,7 @@ code {
 	position: relative;
 	top: 2px;
 }
-/* .selectpicker {
-	height: 60px;
-	width: 90%;
-	margin-left: 5%;
-} */
+
 .btn-new {
 	background-color: rgb(9, 18, 27);
 	height: 50px;
@@ -99,9 +93,6 @@ code {
 	margin-left: 10%;
 }
 
-/* .inner-container {
-	padding: 20px;
-} */
 
 .input-icons i {
 	position: absolute !important;
@@ -139,14 +130,12 @@ code {
 	border-right-style: hidden !important;
 	border-left-style: hidden !important;
 	border-bottom-style: groove !important;
-	/* background-color: #eee; */
 }
 .input-field:focus {
 	outline: none !important;
 }
 
 .bus-background-img {
-	/* background-image: url('./bus_background_img.jpg'); */
 	background-color: rgb(187, 34, 34);
 }
 
@@ -191,7 +180,6 @@ code {
 	border-right-style: hidden !important;
 	border-left-style: hidden !important;
 	border-bottom-style: groove !important;
-	/* background-color: #eee; */
 }
 
 .input-field:focus {
@@ -210,7 +198,6 @@ code {
 	display: block;
 }
 
-/* hi */
 
 * {
     margin: 0;
@@ -218,10 +205,7 @@ code {
     box-sizing: border-box;
   }
   
-  /* body {
-    min-height: 100vh;
-    background-color: #fff;
-  } */
+  
   
   .side-navbar {
     width: 180px;
@@ -246,7 +230,6 @@ code {
     margin-left: 0;
   }
   
-  /* for main section */
   .active-cont {
     margin-left: 180px;
   }
@@ -299,16 +282,10 @@ code {
     margin-left: 0;
   }
   
-  /* for main section */
   .active-cont {
     margin-left: 180px;
   }
   
-  /* #menu-btn {
-    background-color: #0d6efd;
-    color: #fff;
-    margin-left: -62px;
-  } */
   
   .my-container input {
     border-radius: 2rem;
@@ -338,30 +315,16 @@ code {
     text-decoration: none;
   }
 
-/* side bar end */
 
 
-/* signup */
 
 .signUpLink:hover{
 	color: black;
 }
-/* .signUpLink{
-	color: black;
-} */
 
-/* signup end */
 
-/* login */
+
 
 .loginLink:hover{
 	color: black;
 }
-
-
-
-
-
-  
-
-/* login end */
