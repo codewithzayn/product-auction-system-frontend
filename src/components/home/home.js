@@ -31,7 +31,7 @@ const Home = ({ searchText }) => {
 
   const fetchData = async () => {
     const response = await axios.get(
-      `http://localhost:1337/product/get-products?page=${page}&title=${searchText}`,
+      `https://product-auction-system.onrender.com/product/get-products?page=${page}&title=${searchText}`,
       {}
     );
     console.log("response get-products", response);
@@ -110,7 +110,7 @@ const Home = ({ searchText }) => {
 
   // const fetchData = async (page) => {
   //   console.log('page', page)
-  //   const response = await axios.get(`http://localhost:1337/product/get-products?page=${page}&title=${title}`);
+  //   const response = await axios.get(`https://product-auction-system.onrender.com/product/get-products?page=${page}&title=${title}`);
   //   console.log('response', response)
   //   return response.data.products;
   // };
@@ -190,7 +190,7 @@ const Home = ({ searchText }) => {
                     </div>
 
                     <div className="m-4 d-flex justify-content-center">
-                      <img src={`http://localhost:1337/images/${e.photo[0]}`}
+                      <img src={`https://product-auction-system.onrender.com/images/${e.photo[0]}`}
                         class="card-img-top fixed-image-size" alt="Laptop" />
                     </div>
 

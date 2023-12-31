@@ -13,7 +13,7 @@ const PaymentPage = () => {
     const handleToken = (token) => {
         console.log('token.id', token.id)
 
-        axios.post("http://localhost:1337/product/stripe/pay", {
+        axios.post("https://product-auction-system.onrender.com/product/stripe/pay", {
             token: token.id,
             amount: highestBiddingPrice,
             paymentId: id

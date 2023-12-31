@@ -32,7 +32,7 @@ const Dashboards = () => {
       getIdForPayment
     }
     axios
-      .post(`http://localhost:1337/reviews/notify-payment`, obj, {
+      .post(`https://product-auction-system.onrender.com/reviews/notify-payment`, obj, {
         headers: { Authorization: `Bearer ${token}` },
         "Content-Type": "application/json",
       })
@@ -58,7 +58,7 @@ const Dashboards = () => {
     isPaymentDone()
     console.log('token notify', token)
     axios
-      .get(`http://localhost:1337/reviews/notify-rating`, {
+      .get(`https://product-auction-system.onrender.com/reviews/notify-rating`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((response) => {
@@ -99,7 +99,7 @@ const Dashboards = () => {
   // };
   // const loadContent = () => {
   //   axios
-  //     .get(`http://localhost:1337/product/get-products?title=${title}`, {})
+  //     .get(`https://product-auction-system.onrender.com/product/get-products?title=${title}`, {})
   //     .then((response) => {
   //       console.log("response", response);
   //       const data = response.data;

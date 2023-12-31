@@ -40,7 +40,7 @@ const UploadCategories = () => {
     // formData.append("description", description);
     // formData.append("photo", photo);
     axios
-      .post("http://localhost:1337/category/upload-Category", obj, {
+      .post("https://product-auction-system.onrender.com/category/upload-Category", obj, {
         headers: { Authorization: `Bearer ${token}` },
         // "Content-Type": "multipart/form-data"
       })

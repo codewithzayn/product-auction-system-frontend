@@ -59,7 +59,7 @@ const EditSellerProfile = () => {
     console.log("token", token);
 
     axios
-      .put("http://localhost:1337/userProfile/edit-user-profile", formData, {
+      .put("https://product-auction-system.onrender.com/userProfile/edit-user-profile", formData, {
         headers: { Authorization: `Bearer ${token}` },
         "Content-Type": "multipart/form-data"
       })
@@ -118,7 +118,7 @@ const EditSellerProfile = () => {
             <div class="col-md-3 border-right">
               <div class="d-flex flex-column align-items-center text-center p-3 py-5">
                 {photo &&
-                  <img class="rounded-circle mt-5" width="150px" height="200px" src={`http://localhost:1337/images/${photo}`} />
+                  <img class="rounded-circle mt-5" width="150px" height="200px" src={`https://product-auction-system.onrender.com/images/${photo}`} />
                 }
                 <input
                   type="file"

@@ -13,7 +13,7 @@ const SellerProfile = () => {
         console.log("Profile token", token);
         if (token) {
             axios
-                .get(`http://localhost:1337/product/seller-fields`, {
+                .get(`https://product-auction-system.onrender.com/product/seller-fields`, {
                     headers: { Authorization: `Bearer ${token}` },
                 })
                 .then((response) => {
@@ -34,7 +34,7 @@ const SellerProfile = () => {
         console.log("Profile token", token);
         if (token) {
             axios
-                .get(`http://localhost:1337/product/seller-profile`, {
+                .get(`https://product-auction-system.onrender.com/product/seller-profile`, {
                     headers: { Authorization: `Bearer ${token}` },
                 })
                 .then((response) => {
@@ -114,7 +114,7 @@ const SellerProfile = () => {
                                                 >
                                                     <div class="col mb-2 d-flex justify-content-center">
                                                         <img
-                                                            src={`http://localhost:1337/images/${e.photo[0]}`}
+                                                            src={`https://product-auction-system.onrender.com/images/${e.photo[0]}`}
                                                             alt="image 1"
                                                             class="rounded-3"
                                                             style={{ width: "75%", height: "300px", objectFit: 'cover' }}

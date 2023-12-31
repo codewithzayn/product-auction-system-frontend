@@ -16,7 +16,7 @@ const Trends = () => {
     console.log("token", token);
     useEffect(() => {
         axios
-            .get("http://localhost:1337/reviews/make-chart", {
+            .get("https://product-auction-system.onrender.com/reviews/make-chart", {
                 headers: { Authorization: `Bearer ${token}` },
             })
             .then((response) => {

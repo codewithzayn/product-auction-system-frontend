@@ -20,7 +20,7 @@ const SellProfile = () => {
     console.log("id get-review-rating", id);
     console.log("Profile token", token);
     axios
-      .get(`http://localhost:1337/reviews/get-review-rating/${id}`, {
+      .get(`https://product-auction-system.onrender.com/reviews/get-review-rating/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((response) => {
@@ -52,7 +52,7 @@ const SellProfile = () => {
     const token = localStorage.getItem("jwtToken");
     console.log("Profile token", token);
     axios
-      .get(`http://localhost:1337/product/sell-fields/${id}`, {})
+      .get(`https://product-auction-system.onrender.com/product/sell-fields/${id}`, {})
       .then((response) => {
         console.log("response seller-fields", response);
         const data = response.data;
@@ -71,7 +71,7 @@ const SellProfile = () => {
     console.log("Profile token", token);
 
     axios
-      .get(`http://localhost:1337/product/sell-profile/${id}`, {})
+      .get(`https://product-auction-system.onrender.com/product/sell-profile/${id}`, {})
       .then((response) => {
         console.log("response sell-profile", response);
         const data = response?.data;
@@ -188,7 +188,7 @@ const SellProfile = () => {
                         >
                           <div class="mb-2 d-flex justify-content-center">
                             <img
-                              src={`http://localhost:1337/images/${e.photo[0]}`}
+                              src={`https://product-auction-system.onrender.com/images/${e.photo[0]}`}
                               alt="image 1"
                               class="rounded-3"
                               style={{ width: "75%", height: "300px", objectFit: "cover" }}

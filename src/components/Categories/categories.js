@@ -13,7 +13,7 @@ function Categories() {
   console.log("token", token);
   useEffect(() => {
     axios
-      .get("http://localhost:1337/category/get-all-categ-products", {
+      .get("https://product-auction-system.onrender.com/category/get-all-categ-products", {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((response) => {
@@ -100,7 +100,7 @@ function Categories() {
                                         <img
                                           class="img-fluid img-responsive rounded product-image"
                                           
-                                          src={`http://localhost:1337/images/${product.photo[0]}`}
+                                          src={`https://product-auction-system.onrender.com/images/${product.photo[0]}`}
                                           style={imgStyles}
                                         />
                                       </div>

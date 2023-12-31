@@ -34,7 +34,7 @@ const UploadProduct = () => {
   // console.log("token", token);
   useEffect(() => {
     axios
-      .get("http://localhost:1337/category/get-all-categories", {
+      .get("https://product-auction-system.onrender.com/category/get-all-categories", {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((response) => {
@@ -177,7 +177,7 @@ const UploadProduct = () => {
     console.log('newData', newData)
 
     axios
-      .post("http://localhost:1337/product/submit", newData, {
+      .post("https://product-auction-system.onrender.com/product/submit", newData, {
       })
       .then((response) => {
         const data = response.data;
@@ -222,7 +222,7 @@ const UploadProduct = () => {
     formData.append("userType", userType);
     formData.append("selectedDate", selectedDate);
     axios
-      .post("http://localhost:1337/product/upload-product", formData, {
+      .post("https://product-auction-system.onrender.com/product/upload-product", formData, {
         headers: { Authorization: `Bearer ${token}` },
         "Content-Type": "multipart/form-data"
       })

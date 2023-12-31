@@ -58,7 +58,7 @@ const Product = () => {
 
   const renderAllUsers = () => {
     axios
-      .get(`http://localhost:1337/product/render-all-users/${id}`, {
+      .get(`https://product-auction-system.onrender.com/product/render-all-users/${id}`, {
       })
       .then((response) => {
         const data = response.data;
@@ -72,7 +72,7 @@ const Product = () => {
 
   // const recommendedProduct = async () => {
   // axios
-  //   .get("http://localhost:1337/product/recommended-product", {
+  //   .get("https://product-auction-system.onrender.com/product/recommended-product", {
   //     headers: { Authorization: `Bearer ${token}` },
   //     "Content-Type": "application/json",
   //   })
@@ -87,7 +87,7 @@ const Product = () => {
   const isBiddingAllow = () => {
     const token = localStorage.getItem("jwtToken");
     axios
-      .get(`http://localhost:1337/product/is-bid-allow/${id}`, {
+      .get(`https://product-auction-system.onrender.com/product/is-bid-allow/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((response) => {
@@ -114,7 +114,7 @@ const Product = () => {
     }
     console.log('obj recommended-product', obj)
     axios
-      .post("http://localhost:1337/product/recommended-product", obj, {
+      .post("https://product-auction-system.onrender.com/product/recommended-product", obj, {
         headers: { Authorization: `Bearer ${token}` },
         "Content-Type": "application/json",
       })
@@ -132,7 +132,7 @@ const Product = () => {
   useEffect(() => {
     console.log("id", id);
     axios
-      .get(`http://localhost:1337/product/get-product/${id}`, {
+      .get(`https://product-auction-system.onrender.com/product/get-product/${id}`, {
       })
       .then((response) => {
         setCategory(response.data[0]?.categoryId)
@@ -213,7 +213,7 @@ const Product = () => {
     console.log('obj', obj)
     console.log("axios");
     axios
-      .post("http://localhost:1337/product/add-bidding", obj, {
+      .post("https://product-auction-system.onrender.com/product/add-bidding", obj, {
         headers: { Authorization: `Bearer ${token}` },
         "Content-Type": "application/json",
       })
@@ -238,7 +238,7 @@ const Product = () => {
       id
     }
     axios
-      .post("http://localhost:1337/reviews/add-review", obj, {
+      .post("https://product-auction-system.onrender.com/reviews/add-review", obj, {
         headers: { Authorization: `Bearer ${token}` },
         "Content-Type": "application/json"
       })
@@ -260,7 +260,7 @@ const Product = () => {
     }
     console.log('obj add payment', obj)
     axios
-      .post(`http://localhost:1337/reviews/add-payment`, obj, {
+      .post(`https://product-auction-system.onrender.com/reviews/add-payment`, obj, {
         headers: { Authorization: `Bearer ${token}` },
         "Content-Type": "application/json",
       })
@@ -295,7 +295,7 @@ const Product = () => {
         id
       }
       axios
-        .put(`http://localhost:1337/product/finish-bid`, obj, {
+        .put(`https://product-auction-system.onrender.com/product/finish-bid`, obj, {
           headers: { Authorization: `Bearer ${token}` },
           "Content-Type": "application/json",
         })
@@ -355,7 +355,7 @@ const Product = () => {
                   <Slider {...settings} className="m-4">
                     {photo &&
                       photo.map((index) => (
-                        <img src={`http://localhost:1337/images/${index}`}
+                        <img src={`https://product-auction-system.onrender.com/images/${index}`}
                         class="card-img-top fixed-image-sizes" alt="Laptop"  
                         />
                       ))}
@@ -589,7 +589,7 @@ const Product = () => {
                           </div>
 
                           <div className="m-4">
-                            <img src={`http://localhost:1337/images/${e.photo[0]}`}
+                            <img src={`https://product-auction-system.onrender.com/images/${e.photo[0]}`}
                               class="card-img-top fixed-image-size" alt="Laptop" />
                           </div>
 

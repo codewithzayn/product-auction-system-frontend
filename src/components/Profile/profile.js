@@ -20,7 +20,7 @@ const Profile = () => {
       paymentId
     }
     axios
-      .post(`http://localhost:1337/reviews/get-buyer-reviews`, obj, {
+      .post(`https://product-auction-system.onrender.com/reviews/get-buyer-reviews`, obj, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((response) => {
@@ -37,7 +37,7 @@ const Profile = () => {
     const token = localStorage.getItem("jwtToken");
     console.log("get-buyer-reviews token", token);
     axios
-      .get(`http://localhost:1337/user/get-buyer-profile-data`, {
+      .get(`https://product-auction-system.onrender.com/user/get-buyer-profile-data`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((response) => {
@@ -55,7 +55,7 @@ const Profile = () => {
     const token = localStorage.getItem("jwtToken");
     console.log("get-payments token", token);
     axios
-      .get(`http://localhost:1337/reviews/get-payments`, {
+      .get(`https://product-auction-system.onrender.com/reviews/get-payments`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((response) => {
@@ -72,7 +72,7 @@ const Profile = () => {
     const token = localStorage.getItem("jwtToken");
     console.log("Profile token", token);
     axios
-      .get(`http://localhost:1337/product/user-profile`, {
+      .get(`https://product-auction-system.onrender.com/product/user-profile`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((response) => {
@@ -176,7 +176,7 @@ const Profile = () => {
                           >
                             <div class=" mb-2 d-flex justify-content-center">
                               <img
-                                src={`http://localhost:1337/images/${e.photo[0]}`}
+                                src={`https://product-auction-system.onrender.com/images/${e.photo[0]}`}
                                 alt="image 1"
                                 class="rounded-3"
                                 style={{ width: "75%", height: "300px", objectFit: 'cover' }}
@@ -213,7 +213,7 @@ const Profile = () => {
                           >
                             <div class="col mb-2 d-flex justify-content-center">
                               <img
-                                src={`http://localhost:1337/images/${e.photo[0]}`}
+                                src={`https://product-auction-system.onrender.com/images/${e.photo[0]}`}
                                 alt="image 1"
                                 class="rounded-3"
                                 style={{ width: "75%", height: "400px", objectFit: 'cover' }}
@@ -250,7 +250,7 @@ const Profile = () => {
                           >
                             <div class="mb-2 d-flex justify-content-center">
                               <img
-                                src={`http://localhost:1337/images/${e.photo[0]}`}
+                                src={`https://product-auction-system.onrender.com/images/${e.photo[0]}`}
                                 alt="image 1"
                                 class="rounded-3"
                                 style={{ width: "75%", height: "300px", objectFit: "cover" }}
