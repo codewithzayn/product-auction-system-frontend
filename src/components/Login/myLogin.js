@@ -27,7 +27,7 @@ const MyLogin = () => {
     };
     console.log(obj);
     axios
-      .post("https://product-auction-system.onrender.com/user/login", obj)
+      .post("http://localhost:1337/user/login", obj)
       .then((response) => {
         console.log("response", response);
         console.log("data", response.data);

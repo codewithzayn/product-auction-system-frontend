@@ -26,7 +26,7 @@ const obj={
   rating,
   id
 }
-    axios.put('https://product-auction-system.onrender.com/reviews/give-rating', obj,{
+    axios.put('http://localhost:1337/reviews/give-rating', obj,{
       headers: { Authorization: `Bearer ${token}` },
     })
 			.then(response => {

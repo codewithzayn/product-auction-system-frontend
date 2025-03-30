@@ -35,7 +35,7 @@ const SignUp = () => {
 			return
 		}
 		console.log(obj)
-		axios.post('https://product-auction-system.onrender.com/user/sign-up', obj)
+		axios.post('http://localhost:1337/user/sign-up', obj)
 			.then(response => {
 				console.log("response", response)
 				console.log("data", response.data);

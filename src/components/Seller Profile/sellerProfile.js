@@ -13,7 +13,7 @@ const SellerProfile = () => {
         console.log("Profile token", token);
         if (token) {
             axios
-                .get(`https://product-auction-system.onrender.com/product/seller-fields`, {
+                .get(`http://localhost:1337/product/seller-fields`, {
                     headers: { Authorization: `Bearer ${token}` },
                 })
                 .then((response) => {
@@ -34,7 +34,7 @@ const SellerProfile = () => {
         console.log("Profile token", token);
         if (token) {
             axios
-                .get(`https://product-auction-system.onrender.com/product/seller-profile`, {
+                .get(`http://localhost:1337/product/seller-profile`, {
                     headers: { Authorization: `Bearer ${token}` },
                 })
                 .then((response) => {
@@ -88,11 +88,13 @@ const SellerProfile = () => {
                                         <p class="lead fw-normal mb-1">About</p>
                                         <div class="p-4" style={{ "background-color": "#f8f9fa" }}>
                                             <h5>Email:</h5>
-                                            <p class="font-italic mb-1">{sellerFields[0]?.email}</p>
+                                            <p class=" mb-1">{sellerFields[0]?.email}</p>
                                             <h5>Phone Number:</h5>
-
+                                            <p class=" mb-1">Phone Number: {sellerFields[0]?.phone}</p>
                                             <h5>City:</h5>
+                                            <p class=" mb-1">City: {sellerFields[0]?.city}</p>
                                             <h5>Country:</h5>
+                                            <p class=" mb-1">Country: {sellerFields[0]?.country}</p>
                                         </div>
                                     </div>
                                     <div className="d-flex justify-content-center pb-5">
@@ -114,7 +116,7 @@ const SellerProfile = () => {
                                                 >
                                                     <div class="col mb-2 d-flex justify-content-center">
                                                         <img
-                                                            src={`https://product-auction-system.onrender.com/images/${e.photo[0]}`}
+                                                            src={`http://localhost:1337/images/${e.photo[0]}`}
                                                             alt="image 1"
                                                             class="rounded-3"
                                                             style={{ width: "75%", height: "300px", objectFit: 'cover' }}

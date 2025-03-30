@@ -20,7 +20,7 @@ const Profile = () => {
       paymentId
     }
     axios
-      .post(`https://product-auction-system.onrender.com/reviews/get-buyer-reviews`, obj, {
+      .post(`http://localhost:1337/reviews/get-buyer-reviews`, obj, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((response) => {
@@ -37,7 +37,7 @@ const Profile = () => {
     const token = localStorage.getItem("jwtToken");
     console.log("get-buyer-reviews token", token);
     axios
-      .get(`https://product-auction-system.onrender.com/user/get-buyer-profile-data`, {
+      .get(`http://localhost:1337/user/get-buyer-profile-data`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((response) => {
@@ -55,7 +55,7 @@ const Profile = () => {
     const token = localStorage.getItem("jwtToken");
     console.log("get-payments token", token);
     axios
-      .get(`https://product-auction-system.onrender.com/reviews/get-payments`, {
+      .get(`http://localhost:1337/reviews/get-payments`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((response) => {
@@ -72,7 +72,7 @@ const Profile = () => {
     const token = localStorage.getItem("jwtToken");
     console.log("Profile token", token);
     axios
-      .get(`https://product-auction-system.onrender.com/product/user-profile`, {
+      .get(`http://localhost:1337/product/user-profile`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((response) => {
@@ -150,9 +150,12 @@ const Profile = () => {
                     <div class="p-4" style={{ "background-color": "#f8f9fa" }}>
                       <h5> Email: </h5>
                       <p>{buyerProfileData?.email}</p>
-                      <h5>Phone Number:</h5>
-                      <h5>City:</h5>
-                      <h5>Country:</h5>
+                      <h5> Phone Number: </h5>
+                      <p>{buyerProfileData?.phone}</p>
+                      <h5> City: </h5>
+                      <p>{buyerProfileData?.city}</p>
+                      <h5> Country: </h5>
+                      <p>{buyerProfileData?.country}</p>
                     </div>
                   </div>
                   
@@ -176,7 +179,7 @@ const Profile = () => {
                           >
                             <div class=" mb-2 d-flex justify-content-center">
                               <img
-                                src={`https://product-auction-system.onrender.com/images/${e.photo[0]}`}
+                                src={`http://localhost:1337/images/${e.photo[0]}`}
                                 alt="image 1"
                                 class="rounded-3"
                                 style={{ width: "75%", height: "300px", objectFit: 'cover' }}
@@ -213,7 +216,7 @@ const Profile = () => {
                           >
                             <div class="col mb-2 d-flex justify-content-center">
                               <img
-                                src={`https://product-auction-system.onrender.com/images/${e.photo[0]}`}
+                                src={`http://localhost:1337/images/${e.photo[0]}`}
                                 alt="image 1"
                                 class="rounded-3"
                                 style={{ width: "75%", height: "400px", objectFit: 'cover' }}
@@ -250,7 +253,7 @@ const Profile = () => {
                           >
                             <div class="mb-2 d-flex justify-content-center">
                               <img
-                                src={`https://product-auction-system.onrender.com/images/${e.photo[0]}`}
+                                src={`http://localhost:1337/images/${e.photo[0]}`}
                                 alt="image 1"
                                 class="rounded-3"
                                 style={{ width: "75%", height: "300px", objectFit: "cover" }}

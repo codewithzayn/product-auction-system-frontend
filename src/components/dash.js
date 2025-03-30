@@ -9,7 +9,7 @@ const Dash = () => {
 //     const tokenString = localStorage.getItem("jwtToken");
 //     console.log("tokenString", tokenString);
 //     axios
-//       .get("https://product-auction-system.onrender.com/user/dashboard", {
+//       .get("http://localhost:1337/user/dashboard", {
 //         headers: { Authorization: `Bearer ${tokenString}` },
 //       })
 //       .then((response) => {

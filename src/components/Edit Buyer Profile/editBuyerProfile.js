@@ -22,7 +22,7 @@ const EditBUyerProfile = () => {
       // Simulate an API call that takes 2 seconds to complete
       setTimeout(() => {
         if (status === 200) {
-          toast.success('Profile has been uploaded');
+          toast.success('Profile has been updated');
           resolve(status);
         } else {
           toast.error();
@@ -58,7 +58,7 @@ const EditBUyerProfile = () => {
     console.log("token", token);
 
     axios
-      .put("https://product-auction-system.onrender.com/userProfile/edit-user-profile", formData, {
+      .put("http://localhost:1337/userProfile/edit-user-profile", formData, {
         headers: { Authorization: `Bearer ${token}` },
         "Content-Type": "multipart/form-data"
       })
@@ -70,7 +70,7 @@ const EditBUyerProfile = () => {
         localStorage.setItem('photo',photo);
         setPhoto(photo)
         printToast(response.status)
-        //  navigate('/')
+        navigate('/')
       })
       .catch((error) => {
         console.error("There was an error!", error);
@@ -119,7 +119,7 @@ const EditBUyerProfile = () => {
             <div class="col-md-3 border-right">
               <div class="d-flex flex-column align-items-center text-center p-3 py-5">
                 {photo &&
-                  <img class="rounded-circle mt-5" width="150px" height="200px" src={`https://product-auction-system.onrender.com/images/${photo}`} />
+                  <img class="rounded-circle mt-5" width="150px" height="200px" src={`http://localhost:1337/images/${photo}`} />
                 }
                 <input
                   type="file"
