@@ -30,15 +30,9 @@ const SignUp = () => {
 			password: password,
 			confirmPassword: confirmPassword
 		}
-		if (password !== confirmPassword) {
-			toast.error('Password and Confirm Password is incorrect');
-			return
-		}
-		console.log(obj)
 		axios.post('http://localhost:1337/user/sign-up', obj)
 			.then(response => {
 				console.log("response", response)
-				console.log("data", response.data);
 				if (response.data.token) {
 					var token = response.data.token;
 					console.log("token axios", token);
@@ -49,9 +43,8 @@ const SignUp = () => {
 				}
 			})
 			.catch(error => {
-				console.error('There was an error!', error);
+				toast.error(error.response.data.message)
 			});
-		console.log(obj)
 	}
 	return (
 		<>

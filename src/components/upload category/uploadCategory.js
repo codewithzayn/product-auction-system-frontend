@@ -56,7 +56,7 @@ const UploadCategories = () => {
   return (
     <div class="container mt-4 mb-4">
       <div class="pt-3">
-          <Link className="logOutLink" to="/seller-dashboard/1">
+          <Link className="logOutLink" to="/upload-prod/1">
             <button
               type="button"
               class="btn btn-dark col-md-12"
