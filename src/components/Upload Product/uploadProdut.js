@@ -235,13 +235,14 @@ const UploadProduct = () => {
         console.error("There was an error!", error);
       });
   }
-  function getTitleById(id) {
-    const selectedOption = categories.find(option => option._id === id);
-    // console.log('getTitleById', selectedOption)
-    // console.log('getTitleById selectedOption', selectedOption?.title)
+  // function getTitleById(id) {
+  //   console.log()
+  //   const selectedOption = categories.find(option => option._id === id);
+  //   // console.log('getTitleById', selectedOption)
+  //   // console.log('getTitleById selectedOption', selectedOption?.title)
 
-    return selectedOption ? selectedOption.title : "";
-  }
+  //   return selectedOption ? selectedOption.title : "";
+  // }
   return (
     <div class="container mt-4 mb-4">
       <ToastContainer />
@@ -285,7 +286,7 @@ const UploadProduct = () => {
               <option key={option._id} value={option._id} data-title={option.title}>{option.title}</option>
             ))}
           </select>
-          <p>{`You selected ${category} - ${getTitleById(category)}`}</p>
+          {/* <p>{`You selected ${category} - ${getTitleById(category)}`}</p> */}
         </div>
         <div class="form-group">
           <label for="description">Description:</label>

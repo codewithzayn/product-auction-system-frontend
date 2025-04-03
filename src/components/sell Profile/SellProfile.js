@@ -132,7 +132,7 @@ const SellProfile = () => {
                 <div class="ms-3 " style={{ "margin-top": "100px" }}>
                   {/* <h5></h5> */}
                   <h5>{sellerFields[0]?.name}</h5>
-                  <p>Lahore, Pakistan</p>
+                  <p>{sellerFields[0]?.city}</p>
                 </div>
               </div>
               <div
@@ -162,9 +162,9 @@ const SellProfile = () => {
                 <div class="mb-5">
                   <p class="lead fw-normal mb-1">About User</p>
                   <div class="p-4" style={{ "background-color": "#f8f9fa" }}>
-                    <p class="font-italic mb-1">Muhamma Hamas</p>
-                    <p class="font-italic mb-1">Lahore</p>
-                    <p class="font-italic mb-0">Pakistan</p>
+                    <p class="font-italic mb-1">{sellerFields[0]?.name}</p>
+                    <p class="font-italic mb-1">{sellerFields[0]?.city}</p>
+                    <p class="font-italic mb-0">{sellerFields[0]?.country}</p>
                   </div>
                 </div>
 
