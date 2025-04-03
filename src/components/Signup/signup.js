@@ -39,7 +39,7 @@ const SignUp = () => {
 					setAuthToken(token);
 					setToken(token)
 					localStorage.setItem("jwtToken", token);
-					navigate('/')
+		navigate('/')
 				}
 			})
 			.catch(error => {

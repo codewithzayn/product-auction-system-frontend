@@ -64,7 +64,7 @@ const SellerProfile = () => {
                                     </div>
                                     <div class="ms-3" style={{ "margin-top": "100px" }}>
                                         <h5>{sellerFields[0]?.name}</h5>
-                                        {/* <p>m.hamas.fast@gmail.com</p> */}
+                                    
                                         <p>{sellerFields[0]?.city}Lahore, Pakistan</p>
                                     </div>
                                 </div>
